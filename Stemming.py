@@ -13,6 +13,7 @@ for word in words:
 from nltk.stem import RegexpStemmer
 regexp_stemmer = RegexpStemmer('ing$|s$|e$|able$', min=4)
 print("\nRegexp Stemmer results:")
+
 for word in words:
     stemmed_word = regexp_stemmer.stem(word)
     print(f"{word} -> {stemmed_word}")

@@ -5,7 +5,7 @@
     <ProjectGuid>1740063d-65f4-4564-97de-44668fca4f35</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>Part_of_speech.py</StartupFile>
+    <StartupFile>wordEmbedding.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,11 +22,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="BagOfWords.py" />
     <Compile Include="Lemmatization-text Preprocessing.py" />
-    <Compile Include="Part_of_speech.py" />
+    <Compile Include="N-grams.py" />
+    <Compile Include="NamedEntityRecognition.py" />
+    <Compile Include="sample_bag of  words.py" />
     <Compile Include="Stemming.py" />
     <Compile Include="Stop_words.py" />
+    <Compile Include="TF-IDF.py" />
     <Compile Include="tokenization.py" />
+    <Compile Include="wordEmbedding.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

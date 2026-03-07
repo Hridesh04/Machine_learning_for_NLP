@@ -9,7 +9,7 @@
 
 ### Word2vec is a technique for natural language processing published by google in 2013,
 # it is a two layer neural network that takes a text corpus as input and produces a vector space, typically of several hundred dimensions, with each unique word in the corpus being assigned a corresponding vector in the space.
-# the word2vec  algorithm uses a neural network model to learn associations form a large corpus of the text.
+# the word2vec a lgorithm uses a neural network model to learn associations form a large corpus of the text.
 # once,trained such a model can detect synonymous words or suggest additional words for a partial sentence.
 # as a name implies word2vec represents each distinct word with a particular list of numbers called a vector.
 

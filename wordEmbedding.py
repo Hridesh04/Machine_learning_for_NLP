@@ -14,3 +14,18 @@
 # as a name implies word2vec represents each distinct word with a particular list of numbers called a vector.
 
 #The vector is a list of floating point numbers that represent the word in a high dimensional space. The position of a word vector in the space is learned from the text and is based on the words that appear around it in the text. Words that share common contexts in the text are located close to one another in the space.
+import gensim
+print(gensim.__version__)
+
+from gensim.models import Word2Vec, KeyedVectors
+import gensim.downloader as api
+# Sample for word2vec google news 300 model
+# Load the pre-trained Word2Vec model (Google News)
+model = api.load('word2vec-google-news-300')
+# Get the vector representation of a word
+word_vector = model['king']
+print("Vector representation of 'king':", word_vector)
+# Find similar words
+similar_words = model.most_similar('king', topn=5)
+print("Words similar to 'king':", similar_words)
+
